@@ -3,20 +3,20 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-blue-500 text-white py-10 mt-20 px-8">
+      <footer className="bg-blue-500 text-white py-10 mt-20 lg:px-6 px-3">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <p className="text-3xl font-bold mb-4">Alope SOftware House</p>
+            <p className="lg:text-3xl text-2xl font-bold mb-4">Alope SOftware House</p>
             <div className="mb-6">
               <p className="font-semibold text-lg">Find Us</p>
-              <p className="text-sm mt-1 leading-relaxed">
+              <p className="lg:text-sm text-xs mt-1 leading-relaxed">
                 Jalan Pramuka 06/01, Kuningan, <br />
                 Kuningan, Jawa Barat
               </p>
             </div>
             <div>
               <p className="font-semibold text-lg">Contact Us</p>
-              <div className="flex items-center gap-2 mt-2">
+              <div className="flex items-center gap-2 mt-2 lg:text-sm text-xs ">
                 <svg
                   role="img"
                   width="20"
@@ -30,7 +30,7 @@ const Footer = () => {
 
                 <p>+62 889-0980-0987</p>
               </div>
-              <div className="flex items-center gap-2 mt-1">
+              <div className="flex items-center gap-2 mt-2 lg:text-sm text-xs ">
                 <svg
                   role="img"
                   width="20"
@@ -49,14 +49,14 @@ const Footer = () => {
 
           <div>
             <p className="font-semibold text-lg mb-2">Portfolio</p>
-            <ul className="text-sm space-y-1">
+            <ul className="lg:text-sm text-xs space-y-1 ">
               <li>
-                <a href="#home" className="hover:underline">
+                <a href="#our-works" className="hover:underline">
                   Our Works
                 </a>
               </li>
               <li>
-                <a href="#course" className="hover:underline">
+                <a href="#products" className="hover:underline">
                   Our Products
                 </a>
               </li>
@@ -65,7 +65,7 @@ const Footer = () => {
 
           <div>
             <p className="font-semibold text-lg mb-2">Products</p>
-            <ul className="text-sm space-y-1">
+            <ul className="lg:text-sm space-y-1 text-xs">
               <li>
                 <a href="#" className="hover:underline">
                   Alope Academy
@@ -77,7 +77,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="https://alope.id/" className="hover:underline">
                   Alope Course
                 </a>
               </li>

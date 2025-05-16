@@ -36,8 +36,8 @@ const OurProject = () => {
 
   return (
     <>
-      <section className="mx-auto px-8 mt-20" id="article">
-        <h2 className="text-center font-bold text-3xl mb-10">Our Works</h2>
+      <section className="mx-auto lg:px-6 px-3 lg:mt-20 mt-5" id="our-works">
+        <h2 className="text-center font-bold lg:text-3xl text-2xl mb-10">Our Works</h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <div key={index} className="flex flex-col">
