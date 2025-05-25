@@ -1,7 +1,7 @@
 import React from "react";
 
-const Service = () => {
-  const services = [
+const Course = () => {
+  const courses = [
     {
       title: "Mobile App",
       desc: "We develop android app, iOS app for all your digital needs",
@@ -29,13 +29,13 @@ const Service = () => {
   ];
   return (
     <>
-      <section className="lg:mt-20 mt-5 py-20" id="course">
-        <div className="mx-auto px-3 sm:px-6 lg:px-8">
+      <section className="container mx-auto lg:mt-20  mt-5 py-20" id="course">
+        <div className="mx-auto px-3 md:px-6 lg:px-8 xl:px-6">
           <h2 className="text-center font-bold lg:text-3xl text-2xl sm:text-3xl">
             What We Do
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 mt-8 sm:mt-10">
-            {services.map((service, index) => (
+            {courses.map((course, index) => (
               <div
                 key={index}
                 className="bg-white rounded p-4 sm:p-5 shadow-md"
@@ -59,9 +59,9 @@ const Service = () => {
                   </span>
                 </div>
                 <h2 className="font-semibold mt-2 text-base sm:text-lg">
-                  {service.title}
+                  {course.title}
                 </h2>
-                <p className="text-sm mt-1 text-slate-500">{service.desc}</p>
+                <p className="text-sm mt-1 text-slate-500">{course.desc}</p>
               </div>
             ))}
           </div>
@@ -71,4 +71,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Course;

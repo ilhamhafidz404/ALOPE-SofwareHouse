@@ -1,7 +1,7 @@
 import React from "react";
 
-const OurProject = () => {
-  const projects = [
+const Article = () => {
+  const articles = [
     {
       title: "XFood",
       desc: "Cold Storage Management System",
@@ -36,20 +36,32 @@ const OurProject = () => {
 
   return (
     <>
-      <section className="mx-auto lg:px-6 px-3 lg:mt-20 mt-5" id="our-works">
-        <h2 className="text-center font-bold lg:text-3xl text-2xl mb-10">Our Works</h2>
+      <section
+        className="container mx-auto md:px-8 lg:px-8 xl:px-6 px-4 lg:mt-20 mt-5"
+        id="article"
+      >
+        <h2 className="text-center font-bold lg:text-3xl text-2xl mb-10">
+          Our Works
+        </h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
-          {projects.map((project, index) => (
+          {articles.map((article, index) => (
             <div key={index} className="flex flex-col">
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <img src={project.img} alt={project.title} className="w-full object-cover"/>
+                <img
+                  src={article.img}
+                  alt={article.title}
+                  className="w-full object-cover"
+                />
               </div>
               <div className="mt-5 flex items-center justify-between">
                 <div className="">
-                  <h3 className="text-xl font-bold">{project.title}</h3>
-                  <p className="text-slate-500 text-sm">{project.desc}</p>
+                  <h3 className="text-xl font-bold">{article.title}</h3>
+                  <p className="text-slate-500 text-sm">{article.desc}</p>
                 </div>
-                <a href="" className="bg-blue-500 size-10 rounded-full flex justify-center items-center transition hover:bg-blue-600">
+                <a
+                  href=""
+                  className="bg-blue-500 size-10 rounded-full flex justify-center items-center transition hover:bg-blue-600"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -74,4 +86,4 @@ const OurProject = () => {
   );
 };
 
-export default OurProject;
+export default Article;

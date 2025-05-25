@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-blue-500 text-white py-10 mt-20 lg:px-6 px-3">
+      <footer className="container mx-auto bg-blue-500 text-white py-10 mt-20 lg:px-8 xl:px-6 px-4">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <p className="lg:text-3xl text-2xl font-bold mb-4">Alope SOftware House</p>
+            <p className="md:text-lg lg:text-2xl text-2xl font-bold mb-4">Alope Software House</p>
             <div className="mb-6">
               <p className="font-semibold text-lg">Find Us</p>
               <p className="lg:text-sm text-xs mt-1 leading-relaxed">
@@ -51,7 +51,7 @@ const Footer = () => {
             <p className="font-semibold text-lg mb-2">Portfolio</p>
             <ul className="lg:text-sm text-xs space-y-1 ">
               <li>
-                <a href="#our-works" className="hover:underline">
+                <a href="#article" className="hover:underline">
                   Our Works
                 </a>
               </li>
