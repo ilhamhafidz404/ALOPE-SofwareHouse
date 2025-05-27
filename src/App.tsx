@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "./component/Navbar";
 import Header from "./component/Header";
-import OurProject from "./component/Article";
+import Course from "./component/Course";
+import Article from "./component/Article";
 import Footer from "./component/Footer";
 import Product from "./component/Product";
-import Course from "./component/Course";
+import Accordion from "./component/Accordion";
 
 export default function App() {
   return (
@@ -14,8 +15,8 @@ export default function App() {
       <Navbar />
       <Header />
       <Course />
-      <OurProject />
-      <Product />
+      <Article />
+      <Accordion />
       <Footer />
     </>
   );
