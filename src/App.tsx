@@ -1,22 +1,23 @@
 import React from "react";
 import Navbar from "./component/Navbar";
 import Header from "./component/Header";
-import OurProject from "./component/OurProject";
-import Service from "./component/Service";
+import Course from "./component/Course";
+import Article from "./component/Article";
 import Footer from "./component/Footer";
 import Product from "./component/Product";
+import Accordion from "./component/Accordion";
 
 export default function App() {
   return (
     <>
+    
 
-        <Navbar />
-        <Header />
-        <Service />
-        <OurProject />
-        <Product />
-        <Footer />
- 
+      <Navbar />
+      <Header />
+      <Course />
+      <Article />
+      <Accordion />
+      <Footer />
     </>
   );
 }

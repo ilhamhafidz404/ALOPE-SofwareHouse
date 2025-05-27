@@ -2,36 +2,38 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="mt-30 lg:mt-32 px-5 sm:px-6 lg:px-10 container mx-auto" id="home">
-      <div className="flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2 text-left md:text-left order-2 md:order-1">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-500 mb-2">
-            One Stop Solution
+    <header
+      className="mt-20 lg:mt-20 px-4 md:px-6 lg:px-8 xl:px-8 container mx-auto"
+      id="home"
+    >
+      <div className="flex flex-col md:flex-row items-center gap-10 ">
+        <div className="w-full md:w-1/2 text-center md:text-left order-2  md:order-1 sm:w-full">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl  font-bold text-slate-900 mb-2">
+            Solusi Pembuatan
           </h2>
-          <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-950 mb-5">
-            For your digital needs
+          <p className="text-3xl  md:text-4xl lg:text-5xl  xl:text-5xl font-bold text-zinc-950 mb-4">
+            <span className="text-blue-500">Software</span> Anda
           </p>
-          <p className="text-slate-500 text-base md:text-sm mb-8">
-            We help your business grow with our creative solutions. Worry
-            <br className="hidden lg:block" />
-            less and let's work together
+          <p className="text-slate-500 text-xs md:text-sm lg:text-sm xl:text-lg  mb-6">
+            Kami membantu bisnis Anda berkembang{" "}
+            <br className="hidden lg:block" /> melalui solusi kreatif kami.
+            Tenang saja, <br className="hidden lg:block" /> mari bekerja sama.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white w-full py-1 lg:py-2 rounded-full text-base lg:text-lg ">
-            Contact Us Now
-          </button>
+          <div className="flex gap-4 lg:justify-start sm:justify-start justify-center">
+            <button className="bg-blue-500 hover:bg-blue-600 font-semibold text-white px-4 py-1 lg:py-1 rounded-full text-base lg:text-lg ">
+              Daftar gratis
+            </button>
+            <button className="bg-slate-200 font-semibold text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-1 lg:py-1 rounded-full text-base lg:text-lg ">
+              Explore
+            </button>
+          </div>
         </div>
 
         <div className="w-full md:w-1/2 overflow-hidden order-1 md:order-2">
           <img
-            src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="../public/img/logo.png"
             alt="company profile"
-            className="w-full object-cover shadow-md xl:h-auto lg:h-[400px] md:h-[350px] h-[250px] "
-            style={{
-              borderTopLeftRadius: "80px",
-              borderBottomRightRadius: "80px",
-              borderTopRightRadius: "0px",
-              borderBottomLeftRadius: "0px",
-            }}
+            className="w-full object-cover shadow-md  h-auto "
           />
         </div>
       </div>
