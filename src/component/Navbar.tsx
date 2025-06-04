@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,33 +17,28 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-3 sm:gap-4 md:gap-6">
             <ul className="flex gap-4 lg:gap-6 text-sm md:text-base text-zinc-900">
               <li>
-                <a href="#home" className="hover:underline">
+                <a href="/" className="hover:underline">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#course" className="hover:underline">
+                <a href="#learning" className="hover:underline">
                   Learning
                 </a>
               </li>
               <li>
-                <a href="#article" className="hover:underline">
+                <a href="#project" className="hover:underline">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:underline">
+                <a href="#faq" className="hover:underline">
                   About Us
-                </a>
-              </li>
-              <li>
-                <a href="#login" className="hover:underline">
-                  Login
                 </a>
               </li>
             </ul>
             <button className="bg-blue-500 shadow-blue-500 shadow-md hover:bg-blue-600 text-white text-xs sm:text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
-              Sign Up
+              Contact Us
             </button>
           </div>
 
@@ -83,13 +78,10 @@ const Navbar = () => {
           <li>
             <a href="#about">About Us</a>
           </li>
-          <li>
-            <a href="#login">Login</a>
-          </li>
         </ul>
         <div className="px-4">
           <button className="w-[100px] bg-blue-500 hover:bg-blue-500 text-white py-1 rounded-full">
-            Sign Up
+            Contact Us
           </button>
         </div>
       </div>
