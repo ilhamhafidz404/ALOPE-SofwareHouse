@@ -1,4 +1,3 @@
-import React from "react";
 
 const Header = () => {
   return (
@@ -20,12 +19,12 @@ const Header = () => {
             Tenang saja, <br className="hidden lg:block" /> mari bekerja sama.
           </p>
           <div className="flex gap-4 lg:justify-start sm:justify-start justify-center">
-            <button className="bg-blue-500 hover:bg-blue-600 font-semibold text-white px-4 py-1 lg:py-1 rounded-full text-base lg:text-lg ">
-              Daftar gratis
-            </button>
-            <button className="bg-slate-200 font-semibold text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-1 lg:py-1 rounded-full text-base lg:text-lg ">
+            <a className="bg-blue-500 hover:bg-blue-600 font-semibold text-white px-4 py-1 lg:py-1 rounded-full text-base lg:text-lg ">
+              Contact Us
+            </a>
+            <a href="/explore"  className="bg-slate-200 font-semibold text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-1 lg:py-1 rounded-full text-base lg:text-lg ">
               Explore
-            </button>
+            </a>
           </div>
         </div>
 

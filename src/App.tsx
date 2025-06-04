@@ -1,23 +1,18 @@
-import React from "react";
-import Navbar from "./component/Navbar";
-import Header from "./component/Header";
-import Course from "./component/Course";
-import Article from "./component/Article";
-import Footer from "./component/Footer";
-import Product from "./component/Product";
-import Accordion from "./component/Accordion";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./page/Home";
+import Explore from "./page/Explore";
+import Detail from "./page/Detail";
 
 export default function App() {
   return (
     <>
-    
-
-      <Navbar />
-      <Header />
-      <Course />
-      <Article />
-      <Accordion />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/detail" element={<Detail />} />
+        </Routes>
+      </Router>
     </>
   );
 }

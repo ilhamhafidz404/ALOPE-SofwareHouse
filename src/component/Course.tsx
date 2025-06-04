@@ -1,9 +1,8 @@
-import React from "react";
 
 const Course = () => {
   return (
     <>
-      <section className="container mx-auto py-10 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 bg-white text-black">
+      <section className="container mx-auto py-10 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 bg-white text-black" id="learning">
         <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center mb-8 sm:mb-10">
           What We Do
         </h2>
@@ -26,7 +25,7 @@ const Course = () => {
                   Program pelatihan coding dan teknologi untuk mempersiapkan
                   talenta digital siap kerja.
                 </p>
-                <button className="flex items-center gap-1 bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm">
+                <a className="flex items-center w-fit gap-1 bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm" href="https://alope.id/" >
                   View Detail
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +41,7 @@ const Course = () => {
                       d="M8.25 4.5l7.5 7.5-7.5 7.5"
                     />
                   </svg>
-                </button>
+                </a>
 
                 <div className="flex items-center space-x-4 overflow-x-auto scrollbar-hide mt-4">
                   {[...Array(5)].map((_, i) => (

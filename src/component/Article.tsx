@@ -1,81 +1,51 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const Article = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 4;
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const itemsPerPage = 4;
 
   const projects = [
     {
       heading: "Website",
-      title: "CSS Layouting",
+      title: "Nuteam",
       desc: "Penyusunan tampilan web yang rapi dan responsif menggunakan teknik CSS modern.",
-      image: "/img/course.jpg",
+      image: "/img/nuteam.png",
     },
     {
       heading: "Mobile",
-      title: "React Native Project",
+      title: "Wedding",
       desc: "Pengembangan aplikasi mobile lintas platform dengan performa tinggi menggunakan React Native.",
-      image: "/img/course.jpg",
+      image: "/img/wedding.png",
     },
     {
       heading: "Website",
-      title: "Landing Page",
+      title: "Safrenz",
       desc: "Halaman promosi yang dirancang untuk menarik perhatian dan meningkatkan konversi.",
-      image: "/img/course.jpg",
+      image: "/img/safrenz.png",
     },
     {
       heading: "Mobile",
-      title: "UI Design Mobile",
+      title: "Travel",
       desc: "Desain antarmuka aplikasi mobile yang estetis, intuitif, dan fokus pada pengalaman pengguna.",
-      image: "/img/course.jpg",
+      image: "/img/travel.png",
     },
-    {
-      heading: "Website",
-      title: "Company Profile",
-      desc: "Website profesional untuk memperkenalkan profil dan layanan perusahaan.",
-      image: "/img/course.jpg",
-    },
-    {
-      heading: "Mobile",
-      title: "Flutter App",
-      desc: "Aplikasi mobile multiplatform menggunakan Flutter dengan UI modern.",
-      image: "/img/course.jpg",
-    },
-    {
-      heading: "Website",
-      title: "E-Commerce",
-      desc: "Platform toko online lengkap dengan fitur pembayaran dan manajemen produk.",
-      image: "/img/course.jpg",
-    },
-    {
-      heading: "Mobile",
-      title: "Mobile Dashboard",
-      desc: "Tampilan dashboard interaktif untuk monitoring data bisnis secara mobile.",
-      image: "/img/course.jpg",
-    },
-    {
-      heading: "Website",
-      title: "Portfolio Web",
-      desc: "Website personal untuk menampilkan karya, pengalaman, dan kontak.",
-      image: "/img/course.jpg",
-    }
   ];
 
-  const totalPages = Math.ceil(projects.length / itemsPerPage);
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = projects.slice(indexOfFirstItem, indexOfLastItem);
+  // const totalPages = Math.ceil(projects.length / itemsPerPage);
+  // const indexOfLastItem = currentPage * itemsPerPage;
+  // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  // const currentItems = projects.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <section className="container mx-auto py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 bg-blue-100 text-black">
+    <section className="container mx-auto py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 bg-blue-100 text-black" id="project">
       <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center lg:mb-10 mb-4">
         Our Project
       </h2>
       <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 gap-8">
-        {currentItems.map((project, index) => (
+        {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-blue-500 text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
+            className="bg-blue-400 text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
           >
             <div className="w-full sm:w-1/2 relative">
               <h3 className="text-base sm:text-lg xl:text-xl font-semibold py-2">
@@ -85,7 +55,7 @@ const Article = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl shadow-lg object-cover"
+                  className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl shadow-lg object-cover object-center "
                 />
               </div>
             </div>
@@ -101,8 +71,13 @@ const Article = () => {
           </div>
         ))}
       </div>
+      <div className="w-full flex justify-center items-center mt-4">
+        <a href="/explore" className="bg-blue-500 text-lg hover:bg-blue-600 text-white px-8 py-2 rounded-md">
+          Explore
+        </a>
+      </div>
 
-      <div className="hidden sm:flex justify-center mt-8 space-x-4">
+      {/* <div className="hidden sm:flex justify-center mt-8 space-x-4">
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             key={i}
@@ -116,7 +91,7 @@ const Article = () => {
             {i + 1}
           </button>
         ))}
-      </div>
+      </div> */}
       <div className="sm:hidden flex flex-row space-x-4 py-2 overflow-x-auto scrollbar-hide">
         {projects.map((project, index) => (
           <div
@@ -131,7 +106,7 @@ const Article = () => {
                 backgroundPosition: "center",
               }}
             ></div>
-            <div className="relative px-6 py-6">
+            <div className="relative px-4 py-6">
               <div className="absolute -top-5 left-6 bg-blue-500 text-white p-2 rounded-full shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -154,6 +129,9 @@ const Article = () => {
               <p className="text-gray-600 text-xs mt-2 line-clamp-2">
                 {project.desc}
               </p>
+              <button className="mt-4 bg-blue-500 w-1/2 hover:bg-blue-600 text-white py-1 px-4 rounded-full">
+                Explore
+              </button>
             </div>
           </div>
         ))}
