@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../component/Navbar";
 
 const Detail = () => {
@@ -28,7 +27,7 @@ const Detail = () => {
               className="text-blue-600 underline"
               href="https://alope.id/"
             >
-              johan.com 
+              johan.com
             </a>
           </div>
         </div>
